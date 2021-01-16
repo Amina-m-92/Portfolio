@@ -33,4 +33,13 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["Communications Specialist", "Digital Marketer", "Web Developer"],
+        typeSpeed: 90,
+        backSpeed: 60,
+        loop: true
+    });
 });
+
+
