@@ -243,14 +243,14 @@ HEADER SECTION
 }
 
 .logo:hover{
-    color: #d606cc;
+    color: #CBBC92;
     text-decoration: none;
     transition: 0.3s ease;
 
 }
 
 .separator{
-    color:  #d606cc;
+    color:  #CBBC92;
 }
 
 .navbar .navbar-nav li {
@@ -281,7 +281,7 @@ HEADER SECTION
 
 .menu-btn:hover{
     text-decoration: none;
-    color:   #d606cc;
+    color:   #CBBC92;
     border: 0.2px solid rgb(71, 71, 71);
     box-shadow: 2px 2px 2px rgb(112, 112, 112);
     padding: 2px 2px 2px ;
@@ -293,7 +293,7 @@ HEADER SECTION
     position: fixed;
     height: 45px;
     width: 42px;
-    background:  #ECE0D5;
+    background:  #CBBC92;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -367,18 +367,19 @@ INTRO/CAROUSEL  SECTION
 
 .intro-container .job-title span{
     font-weight: 600;
-    color:  #d606cc;
+    color: #CBBC92;
 }
 
 .intro-container a{
+    text-decoration: none;
     display: inline-block;
-    color: #000;
+    color: #fff;
     font-size: 25px;
     font-weight: bold;
-    background-color:  #d606cc;
+    background-color:  #CBBC92;
     border-radius: 10px;
-    border: 2px solid  #d606cc;
-    box-shadow: 2px 2px 2px #fff;
+    border: 2px solid  #CBBC92;
+    box-shadow: 3px 3px 3px #CBBC92;
     padding: 2px 4px;
     margin: 20px 20px 20px 10px;
     transition: all 0.3s ease;
@@ -387,9 +388,9 @@ INTRO/CAROUSEL  SECTION
 
 .intro-container a:hover{
     color: #fff;
-    background: none;
+    background: #333552;
     border: none;
-    box-shadow: 2px 2px 2px #fff,  -2px -2px 3px  #d606cc;
+    box-shadow: 2px 2px 2px #CBBC92,  -2px -2px 3px  #CBBC92;
 }
 
 /* 
@@ -417,7 +418,7 @@ ABOUT SECTION
 }
 
 .about-bold{
-    color:  #d606cc;
+    color:  #CBBC92;
 }
 
 /* 
@@ -437,7 +438,7 @@ SKILLS SECTION
 }
 
 .skill-bold{
-    color:  #d606cc;
+    color:  #CBBC92;
 }
 
 .card{
@@ -447,6 +448,8 @@ SKILLS SECTION
     transition: 0.9;
     height: auto;
     display: flex;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.055), 0 3px 1px -2px rgba(0, 0, 0, 0.102), 0 1px 5px 0 rgba(0, 0, 0, 0.075);
+    border-radius: 6px;
 }
 
 .card-img-top{
@@ -503,11 +506,11 @@ Testimonials/ Recommendation Section
 }
 
 .testimonial-bold{
-    color:  #d606cc;
+    color:  #CBBC92;
 }
 
 #quote-block {
-    background: #333552 80%;
+    background: #333552;
     max-width: 900px;
     margin: auto;    
 }
@@ -541,7 +544,7 @@ Testimonials/ Recommendation Section
 }
 
 #quote-block i {
-    background-color: #ECE0D5;
+    background-color: #CBBC92;
     padding: 1.4rem;
 }
 
@@ -564,13 +567,17 @@ Testimonials/ Recommendation Section
 CONTACT SECTION
 =========================================================== 
  */
- #contact{
+#contact{
     background: black;
     margin-left: 2.5em;
 }
 
+#contact a{
+    color: #CBBC92;
+}
+
 .contact-bold{
-    color:  #d606cc;
+    color:  #CBBC92;
 }
 
 .container-fluid h4 h1 {
@@ -602,6 +609,10 @@ FOOTER SECTION
 footer {
     padding-top: 5rem;
     margin-top: 5px;
+}
+
+footer a{
+    color: #CBBC92;
 }
 
  /* 
