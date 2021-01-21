@@ -36,8 +36,8 @@ $(document).ready(function(){
     // typing animation script
     var typed = new Typed(".typing", {
         strings: ["Communications Specialist", "Digital Marketer", "Web Developer"],
-        typeSpeed: 90,
-        backSpeed: 60,
+        typeSpeed: 100,
+        backSpeed: 70,
         loop: true
     });
 });
