@@ -34,12 +34,13 @@ $(document).ready(function(){
     });
 
     // typing animation script
-    var typed = new Typed(".typing", {
+    const typed = new Typed(".typing", {
         strings: ["Communications Specialist", "Digital Marketer", "Web Developer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
     });
+    
 });
 
 
