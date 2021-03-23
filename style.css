@@ -10,12 +10,15 @@ Designed by Amina Michuki
 * 2. PRELOADER SECTION
 * 3. HEADER SECTION
 * 4. INTRO SECTION
-* 5. SKILLS SECTION
-* 6. PROJECTS SECTION
-* 7. TESTIMONIALS/ RECOMMENDATION SECTION
-* 8. CONTACT SECTION
-* 9. FOOTER SECTION
-* 10. RESPONSIVE STYLING
+* 5. ABOUT SECTION
+* 6. SKILLS SECTION
+* 7. SERVICES SECTION
+* 8. CALL TO ACTION SECTION
+* 9. PROJECTS SECTION
+* 10. TESTIMONIALS/ RECOMMENDATION SECTION
+* 11. CONTACT SECTION
+* 12. FOOTER SECTION
+* 13. RESPONSIVE STYLING
 
 
 */
@@ -44,6 +47,37 @@ body{
     background-color: black;
     font-family: 'Nunito', sans-serif;
 }
+
+.section-title{
+    margin: 0px 0;
+    text-align: center;
+    color: #CBBC92;
+    padding-top: 1em;
+
+}
+
+/* .section-title:before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: #CBBC92;
+    transform: translateX(-50%);
+}
+
+.section-title:after{
+    content: '';
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #CBBC92;
+    transform: translateX(-50%);
+} */
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -331,10 +365,9 @@ INTRO/CAROUSEL  SECTION
     display: flex;
     flex-wrap: wrap;
     background: url("img/Amina-web.png") no-repeat left;
-    background-position: 0px;
     background-size: contain;
     background-attachment: fixed;
-    height:100vh;
+    min-height: 100vh;
     color: #fff;
     font-family: 'Nunito', sans-serif;
 }
@@ -342,10 +375,6 @@ INTRO/CAROUSEL  SECTION
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
-    margin: auto;
-}
-
-.intro-container .max-width{
     margin: auto 0 auto 600px;
 }
 
@@ -372,7 +401,6 @@ INTRO/CAROUSEL  SECTION
 }
 
 .intro-container a{
-    text-decoration: none;
     display: inline-block;
     color: #fff;
     font-size: 25px;
@@ -412,6 +440,7 @@ ABOUT SECTION
 
 #about h2{
     color: #fff;
+    margin-top: 1em;
 }
 
 #about p{
@@ -424,7 +453,6 @@ ABOUT SECTION
 }
 
 .about-container a{
-    text-decoration: none;
     display: inline-block;
     color: #fff;
     font-size: 25px;
@@ -448,132 +476,10 @@ ABOUT SECTION
 
 /* 
 ===========================================================
-SERVICES SECTION
-=========================================================== 
- */
-.services-container{
-    color:#fff;
-    background: #111;
-    margin: 25px auto 5px ;
-    padding-top: 5px;
-}
-
-.services-title{
-    padding-top: 1em;
-    text-align: center;
-    color: #CBBC92;
-}
-.services-container .bars h6{
-    font-weight: 900;
-    margin-bottom: 1em;
-}
-
-.services-container p{
-    text-align: justify;
-}
-
-.services-container .serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto 4em 4em 4em;
-}
-
-.services-container .serv-content .card{
-    width: calc(33% - 20px);
-    background: #f1f1f1;
-    color: #000;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services-container .serv-content .bars{
-    margin-bottom: 15px;
-    /* display: none; */
-}
-.services-container .serv-content .card:hover{
-    background: #333552;
-    color: #fff; 
-    display: block; 
-}
-.services-container .serv-content .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.services-container .serv-content span{
-    font-weight: 500;
-    font-size: 15px;
-    color: #333552, #fff;
-}
-
-.services-container .serv-content .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.services-container .serv-content .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #CBBC92;
-}
-.services-container .serv-content .ninety::before{
-    width: 90%;
-}
-.services-container .serv-content .eighty::before{
-    width: 80%;
-}
-.services-container .serv-content .seventy::before{
-    width: 70%;
-}
-.services-container .serv-content .sixty::before{
-    width: 60%;
-}
-.services-container .serv-content .fifty::before{
-    width: 50%;
-}
-.services-container .serv-content .twenty::before{
-    width: 20%;
-}
-
-.services-container .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services-container .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services-container .serv-content .card i{
-    font-size: 50px;
-    color: #333552;
-    transition: color 0.3s ease;
-}
-.services-container .serv-content .card:hover i{
-    color: #CBBC92;
-}
-.services-container .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/* 
-===========================================================
 SKILLS SECTION
 =========================================================== 
  */
-.skills-title{
-    padding-top: 0;
-    text-align: center;
-    color: #CBBC92;
-}
+
 .skills-container .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -654,16 +560,177 @@ SKILLS SECTION
     width: 70%;
 }
 
+/* 
+===========================================================
+SERVICES SECTION
+=========================================================== 
+ */
+.services-container{
+    color:#fff;
+    background: rgba(68, 67, 67, 0.246);
+    margin: 25px auto 0;
+    padding-top: 5px;
+}
+
+.services-container .bars h6{
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.services-container p{
+    text-align: justify;
+}
+
+.services-container .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 4em 2em 4em;
+    padding-bottom: 2em;
+}
+
+.services-container .serv-content .card{
+    width: calc(33% - 20px);
+    background: #f1f1f1;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1em 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services-container .serv-content .bars{
+    margin-bottom: 15px;
+}
+.services-container .serv-content .card:hover{
+    background: #333552;
+    color: #fff; 
+    display: block; 
+}
+.services-container .serv-content .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.services-container .serv-content span{
+    font-weight: 500;
+    font-size: 15px;
+    color: #333552, #fff;
+}
+
+.services-container .serv-content .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.services-container .serv-content .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #CBBC92;
+}
+.services-container .serv-content .ninety::before{
+    width: 90%;
+}
+.services-container .serv-content .eighty::before{
+    width: 80%;
+}
+.services-container .serv-content .seventy::before{
+    width: 70%;
+}
+.services-container .serv-content .sixty::before{
+    width: 60%;
+}
+.services-container .serv-content .fifty::before{
+    width: 50%;
+}
+.services-container .serv-content .twenty::before{
+    width: 20%;
+}
+
+.services-container .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services-container .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services-container .serv-content .card i{
+    font-size: 50px;
+    color: #333552;
+    transition: color 0.3s ease;
+}
+.services-container .serv-content .card:hover i{
+    color: #CBBC92;
+}
+.services-container .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* 
+===========================================================
+CALL TO ACTION SECTION
+=========================================================== 
+ */
+ .callToAction{
+    background-color: #333552;
+    padding-bottom: 2em;
+}
+.container {
+    padding: 20px;
+    color: #fff;
+}
+.subscribe-container, .input-container, .submit-container{
+    padding: 2em 4em 0 6em;
+    color: #fff;
+}
+input{
+    color: #333552;
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=checkbox] {
+    margin-top: 16px;
+}
+  
+input[type=submit] {
+    background-color: #CBBC92;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    color: #fff;
+    background: #333552;
+    border: none;
+    box-shadow: 2px 2px 2px #CBBC92,  -2px -2px 3px  #CBBC92;
+}
+
  /* 
 ===========================================================
 Testimonials/ Recommendation Section
 =========================================================== 
  */
 #testimonial{
-     background: #111;
- }
+    background: #111;
+}
 
 #testimonial .container #quote-block{
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -701,10 +768,6 @@ Testimonials/ Recommendation Section
     margin-top: 0.5rem
 }
 
-.carousel-title{
-    padding-top: 2rem;
-}
-
 #quote-block i {
     background-color: #CBBC92;
     padding: 1.4rem;
@@ -721,7 +784,76 @@ Testimonials/ Recommendation Section
 .carousel-control-prev,
 .carousel-control-next {
     transition: none;
-    opacity: unset
+    opacity: unset;
+}
+
+/* 
+===========================================================
+PROJECTS SECTION
+=========================================================== 
+ */
+
+.project-container{
+    background: #000016;
+    padding-bottom: 2em;
+}
+
+.project-container .title-reveal .btn{
+    color: #fff;
+    background: #CBBC92;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 3em 3em 3em 3em;
+    transition: 0.5s ease;  
+}
+
+.project-container .title-reveal .btn:hover {
+    color: #fff;
+    background: #333552;
+    border: none;
+    box-shadow: 2px 2px 2px #CBBC92,  -2px -2px 3px  #CBBC92;
+}
+
+.project-container .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+  
+.project-container .content .card{
+    width: 340px;
+    margin: 15px;
+}
+  
+.project-container .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+  
+.project-container .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+  
+.project-container .content .card .card-img img:hover{
+    transform: scale(1.2);
+    content: '';
 }
 
 /* 
@@ -732,12 +864,8 @@ CONTACT SECTION
 #contact{
     background: black;
     margin-left: 2.5em;
-}
-.contact-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    color: #fff;
+    padding-top: 2em;
 }
 
 #contact .column{
@@ -748,15 +876,18 @@ CONTACT SECTION
     color: #CBBC92;
 }
 
-.container-fluid h4 h1 {
+.contact-container h4 h1 {
     align-items: center;
 }
 
-#email{
+#contact h3{
+    color: #fff;
+}
+
+.workEmail{
     border:2px solid #ECE0D5;
     border-radius: 10%;
     width: 30rem;
-    box-shadow: rgba(254, 255, 255, 0.931);
     padding: 1rem;
 }
 
@@ -772,10 +903,12 @@ CONTACT SECTION
 #contact i{
     color: #CBBC92;
     margin-top: 0.2em;
-    
+    justify-content: end; 
 }
+
 .contact-container .right form .fields{
     display: flex;
+
 }
 .contact-container .right form .field,
 .contact-container .right form .fields .field{
@@ -846,6 +979,11 @@ footer {
 
 footer a{
     color: #CBBC92;
+}
+
+footer a:hover{
+    color: #fff;
+    background:none;
 }
 
  /* 
@@ -926,8 +1064,7 @@ RESPONSIVE STYLING
 
     /* intro responsive styling */
     .intro-container .max-width{
-        margin-left: 5%;
-        margin-top: 36%;
+        margin: 30% 10% 20% 50%;
         background: #33355254;
         border-radius: 10px;
     }
@@ -948,7 +1085,7 @@ RESPONSIVE STYLING
         margin-bottom: 0px;
     }
     
-    .intro-container .job-title{
+    .intro-container .-title{
         font-size: 30px;
         margin: 0px 0;
     }
@@ -961,6 +1098,16 @@ RESPONSIVE STYLING
         background-color: #33355283;
     }
 
+    .services-container .serv-content .card {
+        width: calc(33% - 20px);
+        background: #f1f1f1;
+        color: #000;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 
 }
 
